@@ -1,5 +1,5 @@
 name: "Modbus4MQTT"
-version: "master"
+version: "0.1"
 slug: "modbus4mqtt"
 description: "Modbus TCP <-> MQTT glue. YAML configuration. Robust."
 arch:
@@ -20,6 +20,5 @@ schema:
   mqtt_user: str
   mqtt_pass: str
   config_name: str
-image: "ghcr.io/sunshadecorp/modbus4mqtt"
 services:
   - mqtt:need
