@@ -1,4 +1,4 @@
-FROM ghcr.io/sunshadecorp/can-service:master
+FROM ghcr.io/sunshadecorp/modbus4mqtt:master
 
 COPY run.sh /
 RUN chmod a+x /run.sh
