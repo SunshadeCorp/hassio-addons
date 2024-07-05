@@ -1,5 +1,5 @@
 name: "Modbus4MQTT"
-version: "0.1.3"
+version: "0.1.4"
 slug: "modbus4mqtt"
 description: "Modbus TCP <-> MQTT glue. YAML configuration. Robust."
 arch:
