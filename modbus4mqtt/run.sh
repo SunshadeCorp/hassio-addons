@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-sleep 5d
-modbus4mqtt --hostname mosquitto --username user --password pass --config /config/sungrow_sh10rt.yaml
+modbus4mqtt $(python -c "import json; opt=json.load(open('/data/options.json')); print(f\"--hostname {opt['mqtt_hostname']} --username {opt['mqtt_user']} --password {opt['mqtt_pass']} --config {opt['config_name']}\")")
