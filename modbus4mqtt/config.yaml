@@ -1,5 +1,5 @@
 name: "Modbus4MQTT"
-version: "0.1.5"
+version: "0.1.6"
 slug: "modbus4mqtt"
 description: "Modbus TCP <-> MQTT glue. YAML configuration. Robust."
 arch:
@@ -11,7 +11,7 @@ boot: "auto"
 map:
   - addon_config
 options:
-  mqtt_hostname: mqtt
+  mqtt_hostname: addon_core_mosquitto
   mqtt_user: user
   mqtt_pass: pass
   config_name: sungrow_sh10rt.yaml
