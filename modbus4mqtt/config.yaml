@@ -1,0 +1,25 @@
+name: "Modbus4MQTT"
+version: "master"
+slug: "modbus4mqtt"
+description: "Modbus TCP <-> MQTT glue. YAML configuration. Robust."
+arch:
+  - amd64
+  - armv7
+url: "https://github.com/SunshadeCorp/modbus4mqtt"
+startup: "services"
+boot: "auto"
+map:
+  - addon_config
+options:
+  mqtt_hostname: mqtt
+  mqtt_user: user
+  mqtt_pass: pass
+  config_name: sungrow_sh10rt.yaml
+schema:
+  mqtt_hostname: str
+  mqtt_user: str
+  mqtt_pass: str
+  config_name: str
+image: "ghcr.io/sunshadecorp/modbus4mqtt"
+services:
+  - mqtt:need
