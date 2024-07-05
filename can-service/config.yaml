@@ -1,0 +1,16 @@
+name: "CAN Service"
+version: "0.1"
+slug: "can-service"
+description: "CAN Service for integration with Mosquitto. Simulate a BYD Battery-Box Premium HVS over CAN Bus to use a custom battery with your inverter. Controllable via MQTT."
+arch:
+  - amd64
+  - armv7
+url: "https://github.com/SunshadeCorp/can-service"
+startup: "services"
+boot: "auto"
+host_network: true
+map:
+  - addon_config
+image: "ghcr.io/sunshadecorp/can-service:master"
+services:
+  - mqtt:need
