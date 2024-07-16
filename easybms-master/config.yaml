@@ -1,0 +1,15 @@
+name: EasyBMS-master
+version: v1.0.0
+slug: easybms-master
+description: "Software for the EasyBMS master unit running on an Raspberry Pi and managing the slave units on one or several battery modules."
+arch:
+  - amd64
+  - armv7
+url: https://github.com/SunshadeCorp/EasyBMS-master
+startup: services
+boot: auto
+map:
+  - addon_config
+image: ghcr.io/sunshadecorp/easybms-master
+services:
+  - mqtt:need
